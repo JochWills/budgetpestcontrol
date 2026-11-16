@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Budget Pest Control | Pest Control &amp; Fumigation in Gqeberha (Port Elizabeth)</title>
-<meta name="description" content="Pest control, inspections, weed control, fumigation, wood borer treatment and bird removal for homes and businesses in Gqeberha (Port Elizabeth). Free quotes. Call 041 373 4703.">
+<meta name="description" content="Pest control, inspections, weed control, fumigation, and wood borer treatment for homes and businesses in Gqeberha (Port Elizabeth). Free quotes. Call 041 373 4703.">
 <meta name="theme-color" content="#1B2E7A">
 <link rel="canonical" href="https://budgetpestcontrolpe.co.za/">
 <meta property="og:title" content="Budget Pest Control | Gqeberha (Port Elizabeth)">
-<meta property="og:description" content="Pest control, fumigation, wood borer treatment and bird removal. Free quotes. Call 041 373 4703.">
+<meta property="og:description" content="Pest control, fumigation and wood borer treatment. Free quotes. Call 041 373 4703.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://budgetpestcontrolpe.co.za/">
 <meta property="og:image" content="https://budgetpestcontrolpe.co.za/logo.png">
@@ -180,7 +180,9 @@
   .head--split > div{max-width:60ch}
 
   /* services */
-  .grid{display:grid;gap:1.1rem;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:2.8rem}
+  .grid{display:grid;gap:1.1rem;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:2.8rem}
+  .grid .card{grid-column:span 2}
+  .grid .card:nth-child(n+4){grid-column:span 3}
   .card{position:relative;display:flex;flex-direction:column;background:var(--white);
     border:1px solid var(--line-soft);border-radius:var(--r);padding:1.8rem 1.6rem 1.5rem;
     transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
@@ -315,6 +317,8 @@
     .hero__in{grid-template-columns:1fr}
     .status{max-width:520px}
     .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid .card,.grid .card:nth-child(n+4){grid-column:span 1}
+    .grid .card:last-child{grid-column:1/-1}
     .steps{grid-template-columns:1fr}
     .step:not(:last-child)::after{display:none}
     .faq-wrap{grid-template-columns:1fr}
@@ -328,6 +332,7 @@
   @media (max-width:620px){
     body{font-size:16px;padding-bottom:64px}
     .grid{grid-template-columns:1fr}
+    .grid .card:last-child{grid-column:auto}
     .logo img{width:128px}
     .top__cta .btn--quote{display:none}
     .top .btn{padding:.6rem .9rem;font-size:.82rem}
@@ -398,7 +403,7 @@
       <div>
         <p class="eyebrow">Gqeberha &middot; Port Elizabeth</p>
         <h1><span class="nw">Whatever got in,</span><br><span class="hl nw">we get it out.</span></h1>
-        <p class="hero__sub">Pest control, fumigation, wood borer treatment and bird removal for homes and businesses across the Bay. Free quotes, no guesswork.</p>
+        <p class="hero__sub">Pest control, fumigation, wood borer treatment and weed control for homes and businesses across the Bay. Free quotes, no guesswork.</p>
         <div class="hero__cta">
           <a class="btn btn--go" href="tel:+27413734703">
             <svg width="17" height="17" aria-hidden="true"><use href="#i-phone"/></svg>Call 041 373 4703
@@ -435,7 +440,7 @@
         <span class="strip__label">We deal with</span>
         <ul class="chips">
           <li>Cockroaches</li><li>Ants</li><li>Rats &amp; mice</li><li>Fish moths</li>
-          <li>Fleas</li><li>Ticks</li><li>Wood borer</li><li>Pigeons</li><li>Weeds</li>
+          <li>Fleas</li><li>Ticks</li><li>Wood borer</li><li>Weeds</li>
         </ul>
       </div>
     </div>
@@ -446,7 +451,7 @@
       <div class="head head--split rv">
         <div>
           <p class="eyebrow eyebrow--dark">What we do</p>
-          <h2>Six services, one call.</h2>
+          <h2>Five services, one call.</h2>
           <p>From a single cockroach problem to a full fumigation, we inspect, quote and treat — then tell you how to keep it from coming back.</p>
         </div>
         <a class="btn btn--outline" href="tel:+27413734703">Not sure what you need? Call us</a>
@@ -503,16 +508,6 @@
           <span class="card__tag">Selling a property?</span>
           <a class="card__link" href="#contact" data-service="Wood borer">Ask about wood borer <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </article>
-
-        <article class="card rv">
-          <div class="card__top">
-            <div class="card__mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20c6 0 9-3 11-7 2-4 5-6 9-6 0 5-1 8-4 11-3 3-7 5-12 5H4Z"/><path d="M24 7V4M10 20l-4 8M16 19l-2 9"/></svg></div>
-            <span class="card__num">06</span>
-          </div>
-          <h3>Bird removal</h3>
-          <p>Pigeons and nesting birds cleared, plus proofing — netting, spikes and gap closing — so they stay out.</p>
-          <a class="card__link" href="#contact" data-service="Bird removal">Ask about bird removal <svg width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </article>
       </div>
     </div>
   </section>
@@ -559,7 +554,7 @@
           <ul class="list">
             <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg>Inspections with a written report</li>
             <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg>Fumigation of structures and stored goods</li>
-            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg>Bird proofing: netting, spikes, gap closing</li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg>Weed control for premises and vacant plots</li>
           </ul>
         </div>
       </div>
@@ -649,7 +644,6 @@
                 <option>Weed control</option>
                 <option>Fumigation</option>
                 <option>Wood borer</option>
-                <option>Bird removal</option>
                 <option>Not sure yet</option>
               </select>
             </div>
@@ -689,7 +683,7 @@
   <div class="wrap foot__grid">
     <div>
       <div class="foot__brand">Budget <span>Pest Control</span></div>
-      <p class="foot__about">Pest control, fumigation, wood borer treatment and bird removal in Gqeberha (Port Elizabeth).</p>
+      <p class="foot__about">Pest control, fumigation, wood borer treatment and weed control in Gqeberha (Port Elizabeth).</p>
     </div>
     <div>
       <h4>Services</h4>
@@ -698,7 +692,6 @@
         <li><a href="#services">Inspections</a></li>
         <li><a href="#services">Fumigation</a></li>
         <li><a href="#services">Wood borer</a></li>
-        <li><a href="#services">Bird removal</a></li>
       </ul>
     </div>
     <div>
